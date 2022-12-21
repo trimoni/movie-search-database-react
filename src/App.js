@@ -10,6 +10,12 @@ function App() {
 
   const apiurl = 'http://www.omdbapi.com/?i=tt3896198&apikey=bc2afc00'
 
+  const search = (e) => {
+    if (e.key === 'Enter'){
+      
+    }
+  }
+
   const handleInput = (e) => {
     let s = e.target.value
     setState(prevState => {
