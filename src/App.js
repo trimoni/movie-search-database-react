@@ -40,7 +40,7 @@ function App() {
       </header>
       <main>
         <Search handleInput={handleInput} search={search}/>
-        <Results results={results} />
+        <Results results={state.results} />
       </main>
     </div>
   );
