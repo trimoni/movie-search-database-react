@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Result from './Results'
+
 function Result({result}) {
   return (
     <div className='result'>
