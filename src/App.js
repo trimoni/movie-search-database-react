@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 import Search from './components/Search'
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
   const search = (e) => {
     if (e.key === 'Enter'){
-      
+
     }
   }
 
