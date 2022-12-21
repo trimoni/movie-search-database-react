@@ -1,3 +1,5 @@
+import 'Search' from Search
+
 function App() {
   return (
     <div className="App">
@@ -5,7 +7,7 @@ function App() {
         <h1>Movie Database</h1>
       </header>
       <main>
-        
+        <Search />
       </main>
     </div>
   );
