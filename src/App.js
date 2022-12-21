@@ -11,7 +11,7 @@ function App() {
     selected: {}
   })
 
-  const apiurl = 'http://www.omdbapi.com/?i=tt3896198&apikey=bc2afc00'
+  const apiurl = "http://www.omdbapi.com/?apikey=dfe6d885"
 
   const search = (e) => {
     if (e.key === 'Enter'){
@@ -29,8 +29,6 @@ function App() {
     setState(prevState => {
       return { ...prevState, s: s}
     })
-
-    console.log(state.s)
   }
 
   const openPopup = id => {
@@ -58,7 +56,7 @@ function App() {
       <main>
         <Search handleInput={handleInput} search={search}/>
         <Results results={state.results} openPopup={openPopup}/>
-        {(typeof state.selected.Title != 'undefined') ? <Popup selected={state.selected} closePopup={closePopup}/> : false}
+        {(typeof state.selected.Title != 'undefined') ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
       </main>
     </div>
   );
