@@ -56,6 +56,7 @@ function App() {
       <main>
         <Search handleInput={handleInput} search={search}/>
         <Results results={state.results} />
+        {(typeof state.selected.Title != 'undefined') ? <Popup selected={state.selected} closePopup={closePopup}/> : false}
       </main>
     </div>
   );
