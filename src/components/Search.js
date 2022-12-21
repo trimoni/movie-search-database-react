@@ -2,7 +2,9 @@ import React from 'react'
 
 function Search() {
   return (
-    <div>Search</div>
+    <section className='searchbox-wrap'>
+      <input type='text' name='' id='' className='searchbox'/>
+    </section>
   )
 }
 
