@@ -1,6 +1,8 @@
 import React from 'react'
 
-function Results({result}) {
+import Results from './Results'
+
+function Result({result}) {
   return (
     <div className='result'>
       <img src={result.Poster} />
